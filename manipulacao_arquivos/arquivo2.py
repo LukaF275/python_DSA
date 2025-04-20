@@ -25,9 +25,10 @@ for row in full_data:
     cont += 1
 
 print(cont)
+print("\n")
 
 #contando colunas 
-
-cont = 0 
-
-#solucionar problema do nome: nome e sobrenoe sao separados por virgula, oq ue contaria uma coluna a mais. Pensar na solução
+cont = 0
+for i in full_data[0]:
+    cont +=1
+print(cont)
