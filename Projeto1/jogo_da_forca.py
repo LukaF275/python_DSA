@@ -23,6 +23,7 @@ while (tentativas > 0):
     for i in answer:
         print(i, end = " ")
         if (answer == word_list):
-            break
+            tentativas = 0
+            print("Congradulations!")
     tentativas = tentativas - 1
     
