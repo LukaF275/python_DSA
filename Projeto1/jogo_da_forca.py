@@ -19,9 +19,10 @@ while (tentativas > 0):
     letter = input("Digite uma letra aí: ")
     for i in word_list:
         if (letter == i):
-            answer.insert(answer.index(i),i)
-            word_list.remove(i)
+            answer.insert(word_list.index(i),i)
     for i in answer:
         print(i, end = " ")
+        if (answer == word_list):
+            break
     tentativas = tentativas - 1
     
