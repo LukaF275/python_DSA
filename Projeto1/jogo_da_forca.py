@@ -1,4 +1,10 @@
-word = input("Digite uma palavra para descobrirmos:\n")
+import random 
+
+
+answer_list = ['banana','maca','abacate']
+answer_choice = random.choice(answer_list)
+
+print(answer_choice)
 
 word_list = []
 answer = []
@@ -8,10 +14,10 @@ print ("jogo da forca: \n")
 for i in answer:
     i = " - "
 
-for i in word:
+for i in answer_choice:
     print("-",end = " ")
 
-for i in word:
+for i in answer_choice:
     word_list.append(i)
 
 tentativas = 10
@@ -26,4 +32,5 @@ while (tentativas > 0):
             tentativas = 0
             print("Congradulations!")
     tentativas = tentativas - 1
+
     
